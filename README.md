@@ -1,100 +1,49 @@
-# Typescript Playbook Repository
+# TypeScript Playbook Repository
 
-A curated collection of TypeScript examples, patterns, and best practices. This repository is intended as a practical reference for developers learning TypeScript or looking for idiomatic solutions to common typing problems.
+> A comprehensive collection of TypeScript patterns, techniques, and best practices
 
-Features include:
+This repository consists of the following topics:
 
-- Core type techniques and inference
-- Unions, intersections, and discriminated unions
-- Arrays, tuples, and readonly collections
-- Function types, call signatures, and overloads
-- Objects: interfaces, type aliases and index signatures
-- Narrowing, control-flow typing, and guard patterns
-- Generics with constraints and utility helpers
-- Built-in utility types and advanced mapped types
-- Classes, OOP patterns, and design considerations
-- Practical React + TypeScript patterns (props, hooks, contexts)
+## 🟦 Core Types & Inference
 
-## Table of Contents
+Learn when to annotate vs inference; primitives, literals, assertions, and `as const`.
 
-1. Overview
-2. Getting Started
-3. Project Structure
-4. Scripts
-5. Contributing
-6. License
+## 🟧 Unions & Intersections
 
-## Getting Started
+Model alternatives with unions (`A | B`) and combine requirements with intersections (`A & B`).
 
-Prerequisites
+## 🟩 Arrays & Tuples
 
-- Node.js (LTS recommended)
-- npm or yarn
-- TypeScript (installed per-project)
+Explore `T[]` vs `Array<T>`, readonly arrays, tuples with fixed positions, optional items, and labels.
 
-Quick setup
+## 🟪 Functions & Call Signatures
 
-1. Clone the repo
+Master param/return annotations, optional & default params, rest tuples, return inference vs explicit.
 
-   git clone <repository-url>
+## 🟣 Objects, Interfaces & Type Aliases
 
-2. Install dependencies
+Understand interfaces (extends), type aliases (objects/unions/intersections), merging, safer index signatures.
 
-   npm install
+## 🩷 Narrowing & Control Flow
 
-3. Build (compile TypeScript)
+Refine types with `typeof`, `instanceof`, `in`; optional chaining (`?.`) and nullish coalescing (`??`).
 
-   npm run build
+## 🟢 Generics Made Practical
 
-Tip: Use `npm run watch` during development to recompile on changes.
+Learn generic functions & inference, constraints (`<T extends X>`), key types (`<K extends keyof T>`), `getProp()`.
 
-## Project Structure
+## 🟠 Built-in Utility Types
 
-This repo is organized as a playbook of focused examples. Expect folders such as `core/`, `generics/`, `react/` each containing small, annotated examples and test files that demonstrate patterns and edge-cases.
+Master `Partial`, `Required`, `Readonly`, `Pick`, `Omit`, `Record`; `Exclude`, `Extract`, `NonNullable`, `Awaited<T>`.
 
-Typical contents
+## 🔵 Classes & OOP Concepts
 
-- README.md — this file
-- package.json — scripts and dev dependencies
-- tsconfig.json — TypeScript compiler configuration
-- src/ — example source code and modules
-- tests/ — optional tests and usage examples
+Explore class fields, readonly & parameter properties; public/private/protected; abstract, getters/setters.
 
-## Scripts
+## 🟩 React + TypeScript
 
-Common npm scripts you might find (add or adapt in your `package.json`):
-
-- `npm run build` — compile TypeScript to `dist/`
-- `npm run watch` — run `tsc --watch` for iterative development
-- `npm run lint` — run a linter (ESLint) against the codebase
-- `npm test` — run unit tests (Jest / vitest / similar)
-
-Add these to `package.json` if not present to make development easier.
-
-## Contributing
-
-Contributions are welcome. A good starting workflow:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feat/your-topic`
-3. Add or update examples with clear comments and tests when applicable
-4. Run linting and tests locally
-5. Open a pull request describing your changes and rationale
-
-Please follow these guidelines:
-
-- Keep examples small and focused.
-- Prefer clarity over cleverness.
-- Include short comments explaining why a pattern is recommended.
-
-## License
-
-This repository is provided under the MIT License — see the `LICENSE` file for details.
-
-## Contact
-
-If you have questions or suggestions, open an issue or reach out to the maintainer.
+Build props, state, and events with TypeScript. Typed contexts and custom hooks for scalable React apps.
 
 ---
 
-Happy typing! 🎯
+_Happy coding with TypeScript! 🚀_
