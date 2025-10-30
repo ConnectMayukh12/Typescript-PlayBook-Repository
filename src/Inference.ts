@@ -20,7 +20,7 @@ function addition(a: number, b: number) {
   return a + b; // TypeScript infers return type: number
 }
 
-function greet(name: string) {
+function greet1(name: string) {
   return `Hello, ${name}!`; // TypeScript infers return type: string
 }
 
